@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Товар — Иезиль</title>
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/product.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">iezil</div>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="cart.html">Корзина</a>
+      <a href="profile.html">Профиль</a>
+    </nav>
+  </header>
+
+  <!-- Product Page -->
+  <main class="product-page">
+    <div class="product-gallery">
+      <img
+        src="../assets/products/boost-x.jpg"
+        alt="Кроссовки Iezil Boost X"
+        id="main-image"
+      />
+      <div class="thumbnails">
+        <img
+          src="../assets/products/boost-x.jpg"
+          alt="Основной ракурс"
+          class="thumb active"
+        />
+        <img
+          src="../assets/products/boost-x-side.jpg"
+          alt="Боковой ракурс"
+          class="thumb"
+        />
+        <img
+          src="../assets/products/boost-x-top.jpg"
+          alt="Вид сверху"
+          class="thumb"
+        />
+      </div>
+    </div>
+
+    <div class="product-info">
+      <h1>Кроссовки Iezil Boost X</h1>
+      <p class="product-price">9 990 ₽</p>
+      <p class="product-desc">
+        Ультралёгкие кроссовки нового поколения для тех, кто двигается вперёд.
+        Амортизация, устойчивость и стиль — всё в одной паре.
+      </p>
+
+      <div class="size-selector">
+        <label for="size-select">Размер:</label>
+        <select id="size-select">
+          <option value="">Выбрать размер</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+        </select>
+      </div>
+
+      <div class="product-actions">
+        <button class="btn-primary">В корзину</button>
+        <button class="like-btn" title="Добавить в избранное">♥</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="../scripts/product.js"></script>
+</body>
+</html>

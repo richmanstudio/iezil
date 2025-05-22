@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iezil — Магазин одежды и кроссовок</title>
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/product.css" />
+  <style>
+    /* Локальные стили для index.html (hero, новинки, карусель, CTA) */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(to right, #f5f7fa, #e2e6ec);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 10%;
+      position: relative;
+      z-index: 1;
+      animation: fadeIn 1s ease both;
+    }
+    .hero-content h1 {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+      animation: fadeUp 0.8s ease both;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 24px;
+      animation: fadeUp 0.9s ease both;
+    }
+    .new-arrivals {
+      animation: fadeUp 0.8s ease both;
+    }
+    .trends-carousel {
+      animation: fadeUp 0.8s ease both;
+    }
+    .cta {
+      animation: fadeUp 0.8s ease both;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">iezil</div>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="profile.html">Профиль</a>
+      <a href="cart.html">Корзина</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Banner -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Будь первым. Будь в стиле.</h1>
+      <p>Новая коллекция уже здесь. Успей выбрать лучшее!</p>
+      <a href="catalog.html" class="btn-primary">Смотреть каталог</a>
+    </div>
+  </section>
+
+  <!-- Новинки -->
+  <section class="section new-arrivals">
+    <h2>Новинки</h2>
+    <div class="product-grid">
+      <!-- JS: карточки новинок вставляются через index.js -->
+    </div>
+  </section>
+
+  <!-- Карусель / Тренды -->
+  <section class="section trends-carousel">
+    <h2>В тренде</h2>
+    <div class="carousel glass-card">
+      <!-- JS: тренды вставляются через index.js -->
+    </div>
+  </section>
+
+  <!-- CTA-блок -->
+  <section class="cta glass-card">
+    <h2>Стань частью движения</h2>
+    <p>Подпишись на рассылку, чтобы не пропустить скидки и релизы</p>
+    <form class="cta-form">
+      <input type="email" placeholder="Твой email" required />
+      <button type="submit" class="btn-primary">Подписаться</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Iezil. Все права защищены.</p>
+  </footer>
+
+  <script src="../scripts/index.js"></script>
+</body>
+</html>

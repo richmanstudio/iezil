@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Категории — Иезиль</title>
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/admin.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">iezil admin</div>
+    <nav class="nav">
+      <a href="admin.html">Дашборд</a>
+      <a href="admin_add.html">Добавить товар</a>
+      <a href="admin_orders.html">Заказы</a>
+      <a href="admin_promocodes.html">Промокоды</a>
+    </nav>
+  </header>
+
+  <!-- Main Admin Page -->
+  <main class="admin-page">
+    <h1>Категории</h1>
+
+    <form id="category-form" class="admin-form">
+      <input
+        type="text"
+        id="category-name"
+        placeholder="Новая категория"
+        required
+      />
+      <button type="submit" class="btn-primary">Добавить</button>
+    </form>
+
+    <ul id="category-list" class="category-list">
+      <!-- JS вставит категории -->
+    </ul>
+  </main>
+
+  <script src="../scripts/admin_categories.js"></script>
+</body>
+</html>

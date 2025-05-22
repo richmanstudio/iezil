@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Профиль — Иезиль</title>
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/profile.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">iezil</div>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="cart.html">Корзина</a>
+      <a href="profile.html">Профиль</a>
+    </nav>
+  </header>
+
+  <!-- Profile Page -->
+  <main class="profile-page">
+    <h1>Личный кабинет</h1>
+
+    <section class="profile-section">
+      <h2>Ваши данные</h2>
+      <form id="profile-form">
+        <input 
+          type="text" 
+          id="profile-name" 
+          placeholder="Имя" 
+          required 
+        />
+        <input 
+          type="email" 
+          id="profile-email" 
+          placeholder="Email" 
+          required 
+        />
+        <button type="submit" class="btn-primary">Сохранить</button>
+      </form>
+    </section>
+
+    <section class="profile-section">
+      <h2>Избранное</h2>
+      <div id="favorites-list" class="product-grid">
+        <!-- JS вставит избранное -->
+      </div>
+    </section>
+
+    <section class="profile-section">
+      <h2>Мои заказы</h2>
+      <ul id="order-history">
+        <!-- JS вставит заказы -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="../scripts/profile.js"></script>
+</body>
+</html>

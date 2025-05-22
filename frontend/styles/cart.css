@@ -1,0 +1,145 @@
+/* styles/cart.css */
+
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin-top: 50px;
+    animation: fadeIn 0.7s ease both;
+  }
+  
+  .cart-items {
+    flex: 2;
+    min-width: 320px;
+  }
+  
+  /* Итоговая панель */
+  .cart-summary {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(200, 200, 200, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    transition: all 0.3s ease;
+  }
+  
+  .cart-summary h2 {
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+  }
+  
+  .cart-summary p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  
+  .cart-summary input {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  .cart-summary input:focus {
+    background: #fff;
+    border-color: #111;
+  }
+  
+  .cart-summary button {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #111, #000);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transition: all 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cart-summary button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #000, #333);
+  }
+  
+  /* Карточка товара в корзине */
+  .cart-item {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    animation: fadeUp 0.5s ease both;
+  }
+  
+  .cart-item img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+  
+  .cart-item-info {
+    flex: 1;
+  }
+  
+  .cart-item-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  
+  .cart-item-info p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 6px;
+  }
+  
+  .cart-item-info label {
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .quantity-input {
+    width: 70px;
+    padding: 6px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .cart-container {
+      flex-direction: column;
+    }
+  
+    .cart-summary {
+      width: 100%;
+      position: relative;
+      top: 0;
+    }
+  
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-item img {
+      margin-bottom: 10px;
+    }
+  }

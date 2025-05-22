@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оформление заказа — Иезиль</title>
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/checkout.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">iezil</div>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="cart.html">Корзина</a>
+      <a href="profile.html">Профиль</a>
+    </nav>
+  </header>
+
+  <!-- Checkout Page -->
+  <main class="checkout-page">
+    <h1>Оформление заказа</h1>
+
+    <form id="checkout-form" class="checkout-form">
+      <fieldset>
+        <legend>Контактные данные</legend>
+        <input type="text" placeholder="ФИО" required />
+        <input type="tel" placeholder="Телефон" required />
+        <input type="email" placeholder="Email" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Адрес доставки</legend>
+        <input type="text" placeholder="Город" required />
+        <input type="text" placeholder="Улица, дом, квартира" required />
+        <input type="text" placeholder="Почтовый индекс" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Способ доставки</legend>
+        <label><input type="radio" name="delivery" value="courier" checked /> Курьером</label>
+        <label><input type="radio" name="delivery" value="pickup" /> Самовывоз</label>
+      </fieldset>
+
+      <div class="checkout-summary">
+        <p>Сумма заказа: <span id="checkout-total">0 ₽</span></p>
+        <button type="submit" class="btn-primary">Подтвердить заказ</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="../scripts/checkout.js"></script>
+</body>
+</html>

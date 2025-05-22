@@ -1,0 +1,85 @@
+/* styles/profile.css */
+
+.profile-page h1 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    text-align: center;
+    animation: fadeIn 0.6s ease both;
+  }
+  
+  .profile-section {
+    margin-bottom: 60px;
+    animation: fadeUp 0.7s ease both;
+  }
+  
+  .profile-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #222;
+    position: relative;
+  }
+  
+  .profile-section h2::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #111;
+    margin-top: 6px;
+    border-radius: 4px;
+  }
+  
+  #profile-form {
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(200, 200, 200, 0.25);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.05);
+  }
+  
+  #profile-form input {
+    margin-bottom: 18px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  #profile-form input:focus {
+    background: #fff;
+    border-color: #111;
+  }
+  
+  /* Избранное */
+  #favorites-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+  
+  /* Мои заказы */
+  #order-history {
+    list-style: none;
+    padding: 0;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  #order-history li {
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(200, 200, 200, 0.25);
+    border-radius: 12px;
+    margin-bottom: 14px;
+    transition: all 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  #order-history li:hover {
+    background: #fff;
+    transform: translateX(4px);
+  }

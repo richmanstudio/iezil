@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Корзина — Иезиль</title>
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/cart.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">iezil</div>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="profile.html">Профиль</a>
+    </nav>
+  </header>
+
+  <!-- Cart Page -->
+  <main class="cart-page">
+    <h1>Корзина</h1>
+
+    <div class="cart-container">
+      <!-- Items List -->
+      <div class="cart-items" id="cart-items">
+        <!-- JS вставит товары корзины -->
+      </div>
+
+      <!-- Summary -->
+      <div class="cart-summary">
+        <h2>Итого</h2>
+        <p>Сумма: <span id="cart-total">0 ₽</span></p>
+
+        <label for="promo-code">Промокод:</label>
+        <input type="text" id="promo-code" placeholder="Введите промокод" />
+
+        <button id="checkout-btn" class="btn-primary">Оформить заказ</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="../scripts/cart.js"></script>
+</body>
+</html>

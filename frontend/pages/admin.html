@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Админ-панель — Иезиль</title>
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/admin.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">iezil admin</div>
+    <nav class="nav">
+      <a href="admin.html">Дашборд</a>
+      <a href="admin_add.html">Добавить товар</a>
+      <a href="admin_orders.html">Заказы</a>
+      <a href="admin_categories.html">Категории</a>
+      <a href="admin_promocodes.html">Промокоды</a>
+    </nav>
+  </header>
+
+  <!-- Main Admin Page -->
+  <main class="admin-page">
+    <h1>Панель администратора</h1>
+
+    <div class="admin-metrics">
+      <div class="metric-box">
+        <h2 id="metric-orders">0</h2>
+        <p>Всего заказов</p>
+      </div>
+      <div class="metric-box">
+        <h2 id="metric-total">0 ₽</h2>
+        <p>Суммарная выручка</p>
+      </div>
+      <div class="metric-box">
+        <h2 id="metric-favorites">0</h2>
+        <p>Избранных товаров</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="../scripts/admin.js"></script>
+</body>
+</html>

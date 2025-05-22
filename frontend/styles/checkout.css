@@ -1,0 +1,108 @@
+/* styles/checkout.css */
+
+.checkout-page h1 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    text-align: center;
+    animation: fadeIn 0.6s ease both;
+  }
+  
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    animation: fadeUp 0.7s ease both;
+  }
+  
+  /* Поля и блоки формы */
+  .checkout-form fieldset {
+    border: 1px solid rgba(200, 200, 200, 0.2);
+    border-radius: 18px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+  }
+  
+  .checkout-form fieldset:hover {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  }
+  
+  .checkout-form legend {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    color: #222;
+  }
+  
+  .checkout-form label {
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    font-weight: 500;
+  }
+  
+  .checkout-form input[type="text"],
+  .checkout-form input[type="email"],
+  .checkout-form input[type="tel"],
+  .checkout-form input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .checkout-form input:focus {
+    background: #fff;
+    border-color: #111;
+  }
+  
+  .checkout-form input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Радио-кнопки */
+  .checkout-form input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  /* Итоговая секция */
+  .checkout-summary {
+    text-align: right;
+    margin-top: 20px;
+    animation: fadeIn 0.6s ease both;
+  }
+  
+  .checkout-summary p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  
+  .checkout-summary button {
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #111, #000);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  .checkout-summary button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #000, #333);
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .checkout-summary {
+      text-align: center;
+    }
+  }

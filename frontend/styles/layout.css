@@ -1,0 +1,95 @@
+/* styles/layout.css */
+
+/* Секции и контейнеры */
+main,
+section {
+  padding: 80px 8%;
+  position: relative;
+  animation: fadeUp 1s ease both;
+}
+
+.section {
+  margin-bottom: 120px;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -60px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgba(0,0,0,0.03), transparent);
+  filter: blur(10px);
+  z-index: 0;
+}
+
+/* Стилевые элементы-свечения */
+.section-glow {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, rgba(255,255,255,0.3), transparent);
+  filter: blur(40px);
+  z-index: 0;
+  top: -120px;
+  right: -120px;
+}
+
+/* Основные контейнеры страниц */
+.admin-page,
+.cart-page,
+.checkout-page,
+.profile-page,
+.auth-page {
+  max-width: 1000px;
+  margin: auto;
+  animation: fadeUp 0.8s ease both;
+}
+
+.auth-form,
+.admin-form {
+  max-width: 480px;
+  margin: auto;
+  animation: fadeUp 0.8s ease both;
+}
+
+/* Таблицы заказов и данных */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.5s ease both;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #eee;
+}
+
+.orders-table th {
+  background: #f7f7f7;
+  font-weight: 600;
+}
+
+/* Карточный контейнер для каталога */
+.catalog-main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Адаптивные отступы */
+@media (max-width: 768px) {
+  main,
+  section {
+    padding: 60px 6%;
+  }
+}

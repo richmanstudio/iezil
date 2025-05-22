@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог — Иезиль</title>
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/product.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">iezil</div>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="product.html">Каталог</a>
+      <a href="cart.html">Корзина</a>
+      <a href="profile.html">Профиль</a>
+    </nav>
+  </header>
+
+  <!-- Catalog Page -->
+  <main class="catalog-page">
+    <aside class="filters glass-card">
+      <h2>Фильтры</h2>
+      <label>
+        <span>Категория</span>
+        <select id="filter-category">
+          <option value="all">Все</option>
+          <option value="sneakers">Кроссовки</option>
+          <option value="hoodies">Толстовки</option>
+          <option value="tshirts">Футболки</option>
+        </select>
+      </label>
+      <label>
+        <span>Размер</span>
+        <select id="filter-size">
+          <option value="all">Любой</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+        </select>
+      </label>
+    </aside>
+
+    <section class="catalog-main">
+      <div class="catalog-header">
+        <h1>Каталог</h1>
+        <select id="sort-select">
+          <option value="default">Сортировка</option>
+          <option value="price-asc">Сначала дешёвые</option>
+          <option value="price-desc">Сначала дорогие</option>
+        </select>
+      </div>
+
+      <div class="product-grid" id="catalog-products">
+        <!-- JS вставит карточки -->
+      </div>
+    </section>
+  </main>
+
+  <script src="../scripts/catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Добавить товар — Иезиль</title>
+  <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/layout.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/admin.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">iezil admin</div>
+    <nav class="nav">
+      <a href="admin.html">Дашборд</a>
+      <a href="admin_orders.html">Заказы</a>
+      <a href="admin_categories.html">Категории</a>
+      <a href="admin_promocodes.html">Промокоды</a>
+    </nav>
+  </header>
+
+  <!-- Main Admin Page -->
+  <main class="admin-page">
+    <h1>Добавить товар</h1>
+
+    <form id="product-form" class="admin-form" enctype="multipart/form-data">
+      <input
+        type="text"
+        id="product-name"
+        placeholder="Название товара"
+        required
+      />
+
+      <select id="product-category" required>
+        <option value="">Выбрать категорию</option>
+        <option value="sneakers">Кроссовки</option>
+        <option value="hoodies">Толстовки</option>
+        <option value="tshirts">Футболки</option>
+      </select>
+
+      <input
+        type="text"
+        id="product-sizes"
+        placeholder="Размеры (через запятую, например: S,M,L)"
+        required
+      />
+      <input
+        type="number"
+        id="product-price"
+        placeholder="Цена (в ₽)"
+        required
+      />
+
+      <textarea
+        id="product-desc"
+        placeholder="Описание товара"
+        required
+      ></textarea>
+
+      <label for="product-image">Изображение:</label>
+      <input
+        type="file"
+        id="product-image"
+        accept="image/*"
+        required
+      />
+
+      <button type="submit" class="btn-primary">Сохранить</button>
+    </form>
+  </main>
+
+  <script src="../scripts/admin_add.js"></script>
+</body>
+</html>

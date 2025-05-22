@@ -1,0 +1,74 @@
+/* styles/header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .nav a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #111;
+    transition: width 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #111;
+  }
+  
+  .nav a:hover::after {
+    width: 100%;
+  }
+  
+  /* Mobile-first: адаптивность */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .nav {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .nav a {
+      padding: 10px 0;
+      width: 100%;
+    }
+  }
